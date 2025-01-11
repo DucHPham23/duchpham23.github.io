@@ -1,0 +1,128 @@
+<!--khai báo đây là file html-->
+<!DOCTYPE html>
+<!--khai báo ngôn ngữ của file html-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    các thẻ meta - dùng để bổ sung thông tin cho trang web-->
+    <meta name="description" content="Mô tả ngắn cho nội dung của trang web">
+    <meta name="keywords" content="từ khóa, từ khóa, từ khóa">
+    <meta name="author" content="tên tác giả">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    hỗ trợ hiển thị trên màn hình điện thoại-->
+<!--    biểu tượng nhỏ nằm ở tab trình duyệt -->
+    <link rel="icon" href="favicon.icon" type="image">
+<!--    định nghĩa css internal trong thẻ style của head-->
+    <link rel="stylesheet" href="public/css/index.css"
+</head>
+<body>
+<!--Bài học số 1: tìm hiểu cấu trúc cơ bản của html-->
+<!--1. file thực thi câu lệnh html có đuôi là .html. file đầu tiên của dự án sẽ đặt tên là index.html-->
+<!--css: tiến hành makeup cho khung html
+    sử dụng 1 cái thuộc tính attribute của thẻ là style
+    3 cách định nghĩa css:
+    1: inline : viết trực tiếp trong thuộc tính style của thẻ
+    2: internal : khai báo css trong thẻ style ở thẻ head
+    3: external-->
+<p id="myStorm">Thiết lập style qua id của thẻ</p>
+<h1 style="color: green; font-size:35px; font-weight: lighter; background: aqua; font-style: oblique; font-family: 'Andale Mono'; text-align: center ">Hello World</h1>
+<h2 class="mystyle">My Style</h2>
+<div class="mystyle">Div my style</div>
+<h2 style="text-align: end">Sub Title 1</h2>
+<h3 style="text-align: justify">Sub Title 2 Sub Title 2 Sub Title 2 Sub Title 2 Sub Title 2</h3>
+<h4>Sub Title 3</h4>
+<!--Nội dung-->
+<div>Nội dung</div>
+<hr width="300px">
+<div>
+    <h1>Tieu de 1</h1>
+    <h1>Tieu de 2</h1>
+</div>
+<p>Hello World</p>
+<!--thẻ hr - tạo đường kẻ ngang-->
+<hr width="50%">
+<!--thẻ xuống dòng-->
+<br>
+<img src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/04/anh-ha-noi.jpg" alt="Mô tả cho ảnh" width="100px" height="100px">
+<!-- .webp- định dạng ảnh có tốc độ load cao hơn ảnh thông thường-->
+<!--tùy biến cao hơn-->
+<p>Có <u>nhiều</u> <div>kiểu chữ</div> <b>trong dòng này</b></p>
+<!--u: gạch chân chữ
+    b: in đậm chữ-->
+<a href="http://google.com">Liên kết</a>
+<!--thể hiện dạng danh sách-->
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>
+<!--thể hiện thứ tự trong danh sách-->
+<ol></ol>
+<!--dùng hiển thị nội dung đặc biệt, cần giữ nguyên khoảng trắng, xuống dòng-->
+<pre>
+    Tôi viết nội dung trong này ...
+    ABC
+</pre>
+<!--thẻ pre hiển thị 1 đoạn code trong C-->
+<pre>
+    #include <studio>
+    inta main()
+    {
+        printf("Hello World");
+    }
+</pre>
+<!--thẻ table tạo bảng-->
+<table border="1">
+    <tr>
+        <td rowspan="2">1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>9</td>
+        <td colspan="2">10</td>
+    </tr>
+</table>
+<br>
+<!--Tạo máy tính Casio-->
+<table border="2">
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>%</td>
+        <td>AC</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>X</td>
+        <td>//</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td rowspan="2">+</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>.</td>
+        <td>00</td>
+        <td>=</td>
+    </tr>
+</table>
+</body>
+</html>
